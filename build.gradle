@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+//publish {
+//    userOrg = 'Jiffy'
+//    groupId = 'com.nordicusability.com'
+//    artifactId = 'Jiffy-ContentProvider-Contract'
+//    publishVersion = android.defaultConfig.versionName
+//    description = 'Oh hi, this is a nice description for a project, right?'
+//    website = 'https://github.com/novoda/bintray-release'
+//}
+
+//bintray {
+//    user = 'MazyNoc'
+//    key = 'febeabb703d1428c4dd61d679648fe2ab22b1070'
+//
+//    configurations = ['archives']
+//    pkg {
+//        repo = "jcenter"
+//        name = "JiffyContentProviderContract"
+////        websiteUrl = siteUrl
+////        vcsUrl = gitUrl
+//        licenses = ["Apache-2.0"]
+//        publish = true
+//    }
+//}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+}
