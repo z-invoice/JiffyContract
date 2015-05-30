@@ -58,7 +58,7 @@ public class TimeEntry {
 		int columnIndex;
 		columnIndex = cursor.getColumnIndex(TimeEntryContract.OWNER_UUID);
 		if (columnIndex >= 0) {
-			setUuid(UUID.fromString(cursor.getString(columnIndex)));
+			setOwnerUuid(UUID.fromString(cursor.getString(columnIndex)));
 		}
 	}
 
