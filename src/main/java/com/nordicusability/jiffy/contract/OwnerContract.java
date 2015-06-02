@@ -48,7 +48,7 @@ public final class OwnerContract extends JiffyBaseContract {
 	/**
 	* All columns to be used with the content provider as projection variable
 	 */
-	public static final String[] ALL_COLUMNS = { UUID, PARENT_UUID, NAME, COLOR, ARCHIVED, LAST_CHANGED, ROW_STATE};
+	public static final String[] ALL_COLUMNS = {UUID, PARENT_UUID, NAME, COLOR, ARCHIVED, LAST_CHANGED, ROW_STATE};
 
 	//@formatter:on
 

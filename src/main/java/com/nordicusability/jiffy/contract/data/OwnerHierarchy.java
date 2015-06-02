@@ -76,9 +76,6 @@ public class OwnerHierarchy {
 		return result;
 	}
 
-	public Owner get(UUID uuid){
-		return uuidMap.get(uuid);
-	}
 
 	public List<Owner> getChildren(Owner owner) {
 		Hierarchy hierarchy = hierarchyMap.get(owner.getUuid());
